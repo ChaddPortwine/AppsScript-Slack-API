@@ -1,3 +1,4 @@
-function setProperties(properties) {
-  PropertiesService.getScriptProperties.setProperties(properties, false);
-}
+function setProperties() {
+  var scriptProperties = PropertiesService.getScriptProperties()
+  scriptProperties.setProperty("token","")
+};
